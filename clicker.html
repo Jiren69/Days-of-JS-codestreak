@@ -1,0 +1,87 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    Clicker game with JS
+    </title>
+    <style>
+  body { 
+    background-color: black; 
+    font-size: 30px;
+    text-align: center;
+  }
+  #button {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 100px;
+    margin: 0 auto;
+    line-height: 200px;
+    user-select: none;
+    margin-top: 90px;
+  }
+  #score {
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: bold;
+    color: navajowhite;
+  }
+         .dot {
+        height: 100px;
+        width: 100px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 50%;
+        border-color: wheat;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .clock {
+        text-align: center;
+          color: wheat;
+      }
+      .pp {
+        text-align: center;
+          color: wheat;
+      }
+</style>
+    </head>
+    <div id="score">0</div>
+    <div id="button">CLICK ME</div>
+    <body>
+    <script>
+       let counter = 0;
+       document.getElementById('button').onclick = () => {
+       counter = counter + 1;
+       document.getElementById('score').innerText = counter;
+       };
+        ProgressCountdown(10, "pageBeginCountdownText");
+
+      function ProgressCountdown(timeleft, text) {
+        return new Promise((resolve, reject) => {
+          var countdownTimer = setInterval(() => {
+            timeleft--;
+
+            document.getElementById(text).textContent = timeleft;
+
+            if (timeleft <= 0) {
+              clearInterval(countdownTimer);
+              resolve(true);
+            }
+          }, 1000);
+        });
+      }
+    </script>
+        <div class="row begin-countdown">
+      <div class="col-md-12 text-center">
+        <div class="dot" style="position: center">
+          <h3 id="pageBeginCountdownText" class="clock">10</h3>
+          <p class="pp">Seconds</p>
+        </div>
+      </div>
+    </div>
+    </body>
+</html>
