@@ -1,0 +1,175 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: bisque;
+  color: #292929;
+  transform: rotateY(180deg);
+}
+   
+    .column {
+  float: left;
+  width: 45%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+    
+</style>
+</head>
+<body style="background-image:url(https://media.tenor.com/TZaIBNauQfAAAAAC/stars-galaxy.gif)">
+
+<h1 style="text-align: center; font-size: 35px; color: bisque">JS flip cards - World's most successful Businessmen</h1>
+<h3 style="text-align: center; font-size: 25px; color: bisque">Hover over the images below:</h3>
+<br>
+<div class="row">   
+<div class="column">    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://www.pixelstalk.net/wp-content/uploads/images6/Elon-Musk-HD-Wallpaper-Computer.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>This is Elon Musk</h1> 
+      <p>CEO and chief engineer of SpaceX;</p> 
+        <p>CEO and product architect of Tesla, Inc.;</p> 
+          <p>Owner and CEO of Twitter, Inc.</p> 
+      <p style="font-weight: bold">Net Worth: $146.5 B</p>
+        <p> Wikipedia: <a href="https://en.wikipedia.org/wiki/Elon_Musk"> Elon Musk</a></p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="column">    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/5bb22ae84bbe6f67d2e82e05/0x0.jpg?format=jpg&crop=1012,1013,x627,y129,safe&height=416&width=416&fit=bounds" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>This is Jeff Bezos</h1> 
+        <p>Founder, executive chairman, and</p> 
+        <p>former president and CEO of Amazon.</p>  
+      <p style="font-weight: bold">Net Worth: $114 billion</p>
+        <p> Wikipedia: <a href="https://en.wikipedia.org/wiki/Jeff_Bezos"> Jeff Bezos</a></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+    <br><br>
+<div class="row">   
+<div class="column">    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://images.businessoffashion.com/profiles/asset/61/184da57f8aa0278a807f70912c3e58c1d021fbc6.jpeg?auto=format%2Ccompress&crop=top&fit=crop&h=576&w=1024" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>This is Bernald Arnault</h1> 
+        <p>Co-founder, chairman, and chief executive</p>
+        <p>officer of LVMH Moët Hennessy:</p> 
+        <p>Louis Vuitton SE</p>  
+      <p style="font-weight: bold">Net Worth: $181.8 billion</p>
+        <p> Wikipedia: <a href="https://en.wikipedia.org/wiki/Bernard_Arnault"> Bernard Arnault</a></p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="column">    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202212/newsmaker-adani-interview-sixteen_nine.jpg?VersionId=dAY78yf0WNkEfpQxhSklcsrIgGNJDCqC&size=690:388" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>This is Gautam Adani</h1> 
+        <p>Chairman and founder of Adani Group</p>   
+        <p>President of Adani Foundation</p>
+      <p style="font-weight: bold">Net Worth: $150.6 billion</p>
+        <p> Wikipedia: <a href="https://en.wikipedia.org/wiki/Gautam_Adani"> Gautam Adani</a></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+    <br><br>
+<div class="row">   
+<div class="column">    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202209/mukesh-ambani-sixteen_nine.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>This is Mukesh Ambani</h1> 
+        <p>Chairman and managing director of </p>
+        <p>Reliance Industries Ltd.</p> 
+      <p style="font-weight: bold">Net Worth: $104 billion</p>
+        <p> Wikipedia: <a href="https://en.wikipedia.org/wiki/Mukesh_Ambani"> Mukesh Ambani</a></p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="column">    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://images.assettype.com/fortuneindia%2F2022-09%2F305e0299-2791-4cf0-a2aa-97492d492bcb%2FRich_list__Tata_1.jpg?rect=0,8,1908,1073&w=1250&q=60" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>This is Ratan Tata</h1> 
+        <p>Former chairman of Tata Sons</p>
+        <p>Chairman of the Tata Group </p>
+        <p>from 1990 to 2012</p>
+      <p style="font-weight: bold">Net Worth: $1 Billion</p>
+        <p> Wikipedia: <a href="https://en.wikipedia.org/wiki/Ratan_Tata"> Ratan Tata</a></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
