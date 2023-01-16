@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+   body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   input,span{
+      font-size: 20px;
+   }
+</style>
+</head>
+<body>
+<h1>Length Converter</h1>
+<div>
+<h2>Type length in Kilometers to convert it into Meters</h2>
+<p>
+<label>Kilometers</label>
+<input id="inputKm" type="number" placeholder="Kilometers"
+oninput="KmtoMConverter(this.value)" onchange="KmtoMConverter(this.value)">
+</p>
+<p>Meters: <span class="meters"></span></p>
+<script>
+   function KmtoMConverter(length) {
+      document.querySelector(".meters").innerHTML=length*1000;
+   }
+</script>
+</div>
+<div>
+    <h2>Type length in Kilometers to convert it into Centi-meters</h2>
+<p>
+<label>Kilometers</label>
+<input id="inputKm" type="number" placeholder="Kilometers"
+oninput="KmtoCmConverter(this.value)" onchange="KmtoCmConverter(this.value)">
+</p>
+<p>Centi-Meters: <span class="centimeters"></span></p>
+<script>
+   function KmtoCmConverter(length) {
+      document.querySelector(".centimeters").innerHTML=length*100000;
+   }
+</script>
+</div>
+<div>
+    <h2>Type length in Kilometers to convert it into Feet</h2>
+<p>
+<label>Kilometers</label>
+<input id="inputKm" type="number" placeholder="Kilometers"
+oninput="KmtoFConverter(this.value)" onchange="KmtoFConverter(this.value)">
+</p>
+<p>Feet: <span class="feet"></span></p>
+<script>
+   function KmtoFConverter(length) {
+      document.querySelector(".feet").innerHTML=length*3280.84;
+   }
+</script>
+</div>
+<div>
+    <h2>Type length in Meters to convert it into Feet</h2>
+<p>
+<label>Meters</label>
+<input id="inputm" type="number" placeholder="Meters"
+oninput="MtoFConverter(this.value)" onchange="MtoFConverter(this.value)">
+</p>
+<p>Feet: <span class="feet"></span></p>
+<script>
+   function MtoFConverter(length) {
+      document.querySelector(".feet").innerHTML=length*3.28;
+   }
+</script>
+</div>
+<div>
+    <h2>Type length in Centi-meters to convert it into Feet</h2>
+<p>
+<label>Centi-meters</label>
+<input id="inputCm" type="number" placeholder="Centi-meters"
+oninput="CmtoFConverter(this.value)" onchange="CmtoFConverter(this.value)">
+</p>
+<p>Feet: <span class="feet"></span></p>
+<script>
+   function KmtoMConverter(length) {
+      document.querySelector(".feet").innerHTML=length*0.0328;
+   }
+</script>
+</div>
+</body>
+</html>
