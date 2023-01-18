@@ -12,3 +12,4 @@ Day-10, Date: 13-01-2023: JS Toss Simulator
 Day-11, Date: 15-01-2023: JS background color changer
 Day-12, Date: 16-01-2023: JS unit converters
 Day-13, Date: 17-01-2023: JS Timer
+Day-14, Date: 18-01-2023: JS Image Slider
