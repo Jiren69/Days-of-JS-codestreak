@@ -16,3 +16,4 @@ Day-14, Date: 18-01-2023: JS Image Slider
 Day-15, Date: 19-01-2023: JS video background
 Day-16, Date: 21-01-2023: JS Tic Tac Toe Game
 Day-17, Date: 23-01-2023: JS Weather
+Day-18, Date: 24-01-2023: JS Contacts
